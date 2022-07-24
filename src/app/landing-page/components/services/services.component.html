@@ -1,15 +1,16 @@
 <h1>خدمات</h1>
-<div class="carosel">
-  <div class="items-container">
-    <div *ngFor="let item of serviceItems">
-        <div class="item" [ngClass]="{ foucos: item.focused }">
-          <img *ngIf="item.image" [src]="item.image" alt="icon" />
-          <h4>{{ item.desc }}</h4>
-    </div>
-        <!-- <div *ngSwitch="item.focused">
-          <button *ngSwitchCase="true" class="">بیشتر بخوانید</button>
-          <button *ngSwitchCase="false"><img src="" alt="arrow" /></button>
-        </ng-container> -->
-    </div>
+<div class="items-container">
+  <div
+    *ngFor="let item of serviceItems; let i = index"
+    class="item"
+    [ngClass]="{ 'larger-item': i === 1 }"
+  >
+    <p [ngClass]="{ 'large-desc': i === 1 }">
+      {{ item.desc }}
+    </p>
+
+    <button *ngIf="i !== 1" class="circel-arrow-btn">ARROW</button>
+
+    <button *ngIf="i===1" class="large-btn">بیشتر بخوانید</button>
   </div>
 </div>
