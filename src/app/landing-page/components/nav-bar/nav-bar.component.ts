@@ -8,23 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavBarComponent implements OnInit {
   navButtons = [
     {
-      name: 'جستوجو',
-      rout: '',
-    },
-    {
-      name: 'خدمات',
-      rout: '',
-    },
-    {
-      name: 'ساعت ویزیت',
-      rout: '',
-    },
-    {
-      name: 'مقالات',
-      rout: '',
-    },
-    {
-      name: 'درباره ما',
+      name: 'پرسش های متداول',
       rout: '',
     },
     {
@@ -32,9 +16,25 @@ export class NavBarComponent implements OnInit {
       rout: '',
     },  
     {
-      name: 'پرسش های متداول',
+      name: 'درباره ما',
       rout: '',
     },
+    {
+      name: 'مقالات',
+      rout: '',
+    },
+    {
+      name: 'ساعت ویزیت',
+      rout: '',
+    },
+    {
+      name: 'خدمات',
+      rout: '',
+    },
+      {
+        name: 'جستوجو',
+        rout: '',
+      },
   ];
 
   constructor() {}

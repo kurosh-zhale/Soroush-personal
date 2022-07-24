@@ -1,1 +1,15 @@
-<p>services works!</p>
+<h1>خدمات</h1>
+<div class="carosel">
+  <div class="items-container">
+    <div *ngFor="let item of serviceItems">
+        <div class="item" [ngClass]="{ foucos: item.focused }">
+          <img *ngIf="item.image" [src]="item.image" alt="icon" />
+          <h4>{{ item.desc }}</h4>
+    </div>
+        <!-- <div *ngSwitch="item.focused">
+          <button *ngSwitchCase="true" class="">بیشتر بخوانید</button>
+          <button *ngSwitchCase="false"><img src="" alt="arrow" /></button>
+        </ng-container> -->
+    </div>
+  </div>
+</div>
