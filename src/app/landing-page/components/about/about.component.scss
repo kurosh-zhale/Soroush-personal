@@ -1,0 +1,43 @@
+.container {
+  width: 80vw;
+  height: 200px;
+  background-color: #c4ec89b2;
+  display: flex;
+  flex-direction: row;
+  .image-container {
+    float: left;
+    width: 30%;
+    display: flex;
+    margin-left: 20px;
+
+    .image-left {
+      width: 30%;
+      border: transparent solid 1px;
+      border-radius: 15px;
+      margin-right: 12px;
+      background-color: var(--soroush-orange);
+      position: relative;
+      top: 45px;
+    }
+
+    .image-right {
+      width: 30%;
+      border: transparent solid 1px;
+      border-radius: 15px;
+      background-color: var(--soroush-orange);
+      position: relative;
+      top: 25px;
+    }
+  }
+  .description {
+    width: 70%;
+    height: 100%;
+    color: #000;
+    font-weight: 700;
+    direction: rtl;
+    text-align: start;
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+}
