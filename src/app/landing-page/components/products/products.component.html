@@ -1,1 +1,25 @@
-<p>products works!</p>
+<h1>جدید ترین محصولات</h1>
+<div class="hr"></div>
+<div class="content-wrapper">
+  <div class="container">
+    <div
+      class="product-container"
+      *ngFor="let product of products"
+      [ngClass]="{ selected: product.selected }"
+    >
+      <div class="image-container">
+        <img [src]="product.image" alt="PRODUCT" />
+      </div>
+      <div class="description">
+        <p>{{ product.name }}</p>
+        <a>توضیحایت بیشتر</a>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex w-100 justify-content-center">
+    <div class="page-indexer"></div>
+    <div class="page-indexer"></div>
+    <div class="page-indexer"></div>
+  </div>
+  <p>مشاهده همه محصولات</p>
+</div>
