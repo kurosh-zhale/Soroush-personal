@@ -1,1 +1,16 @@
 <h1 class="main-header">جدید ترین مقالات</h1>
+<div class="container">
+  <div
+    class="items-container"
+    *ngFor="let publishment of publishments"
+  >
+    <div class="image-container">
+      <img [src]="publishment.image" class="image" />
+    </div>
+    <div class="description">
+      <h4>{{ publishment.name }}</h4>
+      <p>{{ description }}...</p>
+    </div>
+    <button class="button">مطالب بیشتر</button>
+  </div>
+</div>
