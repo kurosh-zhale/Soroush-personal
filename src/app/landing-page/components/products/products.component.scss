@@ -70,7 +70,7 @@
     display: inline;
     width: 10%;
     height: 3px;
-    background-color: var(--soroush-green); 
+    background-color: var(--soroush-green);
     filter: opacity(50%);
     margin: 5px;
     transition: all 100ms ease-in;
@@ -78,5 +78,10 @@
   .page-selected {
     filter: opacity(100%);
   }
-  
+}
+
+@media screen and (min-device-width: 1900px) {
+  .content-wrapper {
+    width: 15in;
+  }
 }

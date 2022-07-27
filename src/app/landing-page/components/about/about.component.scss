@@ -12,21 +12,7 @@
     display: flex;
     margin-left: 20px;
 
-    .image-left {
-      width: 30%;
-      border: transparent solid 1px;
-      border-radius: 15px;
-      margin-right: 12px;
-      background-color: var(--soroush-orange);
-      position: relative;
-      top: 45px;
-    }
-
-    .image-right {
-      width: 30%;
-      border: transparent solid 1px;
-      border-radius: 15px;
-      background-color: var(--soroush-orange);
+    .image{
       position: relative;
       top: 25px;
     }
@@ -39,6 +25,24 @@
     text-align: start;
     h1 {
       margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (min-device-width:1900px) {
+  .about-container{
+    width: 15in;
+    height: 300px;
+
+    .image-container{
+      .image{
+        top: 50px;
+        left: 50px;
+      }
+    }
+
+    .description{
+      padding-top: 70px;
     }
   }
 }

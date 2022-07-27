@@ -39,6 +39,8 @@ export class PublishmentsComponent implements OnInit {
 
   ngOnInit(): void {
     this.filterDescription();
+    console.log(window.innerWidth);
+    
   }
 
   filterDescription() {

@@ -39,3 +39,10 @@
 .carosel::-webkit-scrollbar {
   display: none;
 }
+
+
+@media screen and (min-device-width:1900px) {
+  .carosel{
+    width: 15in;
+  }
+}
