@@ -1,5 +1,5 @@
-.container {
-  width: 10in;
+.about-container {
+  width: 12in;
   height: 200px;
   background-color: #c4ec89b2;
   display: flex;
@@ -7,7 +7,7 @@
   margin-bottom: 50px;
 
   .image-container {
-    float: left;
+    float: right;
     width: 30%;
     display: flex;
     margin-left: 20px;
@@ -35,7 +35,6 @@
     width: 70%;
     height: 100%;
     color: #000;
-    font-weight: 700;
     direction: rtl;
     text-align: start;
     h1 {

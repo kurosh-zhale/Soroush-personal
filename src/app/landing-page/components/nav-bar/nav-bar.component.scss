@@ -1,13 +1,18 @@
-.container {
+@mixin navbtn($time) {
+  font-size: small;
+  background-color: transparent;
+  transition: all $time ease-out;
+}
+
+.nav-bar-container {
   padding: 0;
-  width: 12in;
+  width: 12.5in;
   height: 350px;
   background-color: var(--soroush-green);
   color: #fff;
-  margin-left: 5vw;
   border: transparent solid 1px;
   border-radius: 50px 0% 0% 50px;
-  box-shadow: 0px 4px 12px 0px #68ab57
+  box-shadow: 0px 4px 12px 0px #68ab57;
 }
 
 .navigation-bar {
@@ -70,15 +75,13 @@
   border: transparent solid 1px;
   border-radius: 10px;
   color: #fff;
+  width: max-content;
   height: max-content;
   text-align: center;
   direction: rtl;
-  height: min-content;
 }
 .nav {
-  font-size: small;
-  background-color: transparent;
-  transition: all 300ms ease-out;
+  @include navbtn(300ms);
 }
 
 .nav:hover {
@@ -89,9 +92,8 @@
 }
 
 .info {
-  font-size: small;
+  font-size: smaller;
   background-color: var(--soroush-green-dark);
-  width: 100px;
   transition: all 300ms ease-out;
   position: relative;
   right: 60px;
@@ -100,4 +102,10 @@
 
 .info:hover {
   filter: hue-rotate(60deg) saturate(160%);
+}
+
+.nav-selected {
+  @include navbtn(200ms);
+  background-color: var(--soroush-orange);
+  filter: opacity(100%) !important;
 }

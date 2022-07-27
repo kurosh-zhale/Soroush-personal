@@ -1,10 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 @import url(./assets/styles/colors.scss);
 
+@font-face {
+    font-family: 'ir-yekan';
+    src: local('ir-yekan'),url('./assets/fonts/BYekan.woff');
+}
+
+@font-face {
+    font-family: 'ir-yekan-bold';
+    src: local('ir-yekan-cold'),url('./assets/fonts/IRYekanBold.woff.ttf');
+}
+
 .wrapper{
     left: 0;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
+    font-family: 'ir-yekan-bold',;
 }
 
 h1.main-header{

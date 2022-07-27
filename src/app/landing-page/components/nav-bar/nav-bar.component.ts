@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -14,7 +14,7 @@ export class NavBarComponent implements OnInit {
     {
       name: 'ارطبات با ما',
       rout: '',
-    },  
+    },
     {
       name: 'درباره ما',
       rout: '',
@@ -31,15 +31,27 @@ export class NavBarComponent implements OnInit {
       name: 'خدمات',
       rout: '',
     },
-      {
-        name: 'جستوجو',
-        rout: '',
-      },
+    {
+      name: 'جستوجو',
+      rout: '',
+    },
   ];
 
-  constructor() {}
+  private prevButton!: EventTarget | null;
+
+  constructor(private renderer2: Renderer2) {}
 
   ngOnInit(): void {}
 
-  onClick(id: number) {}
+  async onClick(event: MouseEvent) {
+    if (this.prevButton) {
+      await this.renderer2.removeClass(this.prevButton, 'nav-selected');
+      this.renderer2.addClass(this.prevButton, 'nav');
+    }
+    await this.renderer2.removeClass(event.target, 'nav');
+
+    this.renderer2.addClass(event.target, 'nav-selected');
+
+    this.prevButton = event.target;
+  }
 }

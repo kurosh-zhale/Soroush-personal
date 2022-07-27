@@ -8,19 +8,25 @@ import { Component, OnInit } from '@angular/core';
 export class PublishmentsComponent implements OnInit {
   publishments = [
     {
-      image: '../../../../assets/images/komarov-egor-LlvSEbgjQoA-unsplash.jpg',
+      image: '../../../../assets/images/Asset 5.png',
       rout: '#',
       name: 'Test',
       desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore porro sapiente at molestias harum voluptas officiis accusantium veritatis vel. Excepturi voluptatem saepe voluptatum similique suscipit non inventore obcaecati aliquam nulla.',
     },
     {
-      image: '../../../../assets/images/komarov-egor-LlvSEbgjQoA-unsplash.jpg',
+      image: '../../../../assets/images/Asset 6.png',
       rout: '#',
       name: 'Test',
       desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore porro sapiente at molestias harum voluptas officiis accusantium veritatis vel. Excepturi voluptatem saepe voluptatum similique suscipit non inventore obcaecati aliquam nulla.',
     },
     {
-      image: '../../../../assets/images/komarov-egor-LlvSEbgjQoA-unsplash.jpg',
+      image: '../../../../assets/images/Asset 8.png',
+      rout: '#',
+      name: 'Test',
+      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore porro sapiente at molestias harum voluptas officiis accusantium veritatis vel. Excepturi voluptatem saepe voluptatum similique suscipit non inventore obcaecati aliquam nulla.',
+    },
+    {
+      image: '../../../../assets/images/Asset 9.png',
       rout: '#',
       name: 'Test',
       desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore porro sapiente at molestias harum voluptas officiis accusantium veritatis vel. Excepturi voluptatem saepe voluptatum similique suscipit non inventore obcaecati aliquam nulla.',
@@ -37,6 +43,5 @@ export class PublishmentsComponent implements OnInit {
 
   filterDescription() {
     this.publishments.map((el) => (this.description = el.desc.slice(0, 100)));
-    console.log(2);
   }
 }

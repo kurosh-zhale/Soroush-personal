@@ -1,23 +1,20 @@
 <h1 class="main-header">معرفی کادر درمان</h1>
 <div class="carosel">
-  <ng-container *ngFor="let member of staffMembers">
-    <div
-    class="staff"
-    [ngClass]="{focused:member.focused}"
-    >
-      <div class="image-container">
-        <img
-          [src]="member.image"
-          alt=""
-          width="100"
-          height="120"
-          class="image"
-        />
+    <ng-container *ngFor="let member of staffMembers">
+      <div class="staff" [ngClass]="{ focused: member.focused }">
+        <div class="image-container">
+          <img
+            [src]="member.image"
+            alt=""
+            width="100"
+            height="120"
+            class="image"
+          />
+        </div>
+        <div class="description">
+          <h5>{{ member.name }}</h5>
+          <p>{{ member.desription }}</p>
+        </div>
       </div>
-      <div class="description">
-        <h5>{{ member.name }}</h5>
-        <p>{{ member.desription }}</p>
-      </div>
-    </div>
-  </ng-container>
+    </ng-container>
 </div>

@@ -1,13 +1,12 @@
 .items-container {
   display: flex;
   justify-content: space-between;
-  width: 10in;
+  width: 12in;
 
   .item {
     background-color: var(--soroush-lime);
     color: #000;
     font-size: medium;
-    font-weight: bolder;
     width: 18%;
     height: 200px;
     border: transparent solid 1px;
@@ -20,6 +19,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .desc{
+      margin:10px
+    }
 
     .circel-arrow-btn {
       width: 50%;
@@ -39,8 +42,7 @@
   .larger-item {
     transform: scale(1.3);
     .large-desc {
-      font-size: 16px;
-      font-weight: 500;
+      font-size: small;
     }
     .large-btn {
       background-color: var(--soroush-orange);
